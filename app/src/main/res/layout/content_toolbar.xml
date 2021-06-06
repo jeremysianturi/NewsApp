@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbars"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/orange_500"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_news" />
+
+    <ImageView
+        android:id="@+id/iv_navigation_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_navigation_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tittle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rowdies_bold"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_24"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tittle_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/title_apple_news" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_tittle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rowdies_light"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_12"
+        app:layout_constraintBottom_toTopOf="@+id/edt_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Date" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_edt_search_white"
+        android:drawableEnd="@drawable/ic_search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:elevation="2dp"
+        android:hint="Search"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

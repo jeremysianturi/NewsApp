@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="button_apple">Apple News</string>
+    <string name="button_tesla">Tesla News</string>
+    <string name="title_apple_news">Apple News</string>
+    <string name="title_tesla_news">Apple News</string>
+    <string name="label_something_wrong">Something Wrong!</string>
+    <string name="label_ok">OK</string>
+    <string name="go_to_detail">Go to Detail</string>
+</resources>

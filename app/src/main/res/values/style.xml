@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tv_content_list_item" parent="TextAppearance.AppCompat.Medium" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_text_content_list_item</item>
+    </style>
+
+    <style name="tv_content_item" parent="TextAppearance.AppCompat.Medium" >
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_text_tittle_list_item</item>
+        <item name="android:fontFamily">@font/sf_protext_medium</item>
+    </style>
+
+    <style name="text_tittle_style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/text_20</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_content_style_grey" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+</resources>
